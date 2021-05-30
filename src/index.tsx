@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
+
+  html, body {
+    font-size: 16px;
+  }
 `;
 
 ReactDOM.render(
