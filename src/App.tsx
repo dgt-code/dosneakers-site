@@ -1,10 +1,9 @@
 import React from 'react';
 import { renderRoutes, RouteConfig } from 'react-router-config';
+import { Layout } from 'src/components';
 
 export const App: React.FC<RouteConfig> = ({ route }) => (
-  <React.Fragment>
-    {renderRoutes(route.routes)}
-  </React.Fragment>
+  <Layout>{renderRoutes(route.routes)}</Layout>
 );
 
 App.displayName = 'App';
