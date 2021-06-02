@@ -14,6 +14,8 @@ const GlobalStyle = createGlobalStyle`
 
   html, body {
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
   }
 `;
 
