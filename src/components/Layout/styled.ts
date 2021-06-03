@@ -13,12 +13,7 @@ export const Styled = styled.div`
 export const Main = styled.main`
   flex: 1;
   width: 100%;
-  padding: 0 16px;
   box-sizing: border-box;
-
-  @media(min-width: 768px) {
-    padding: 0 24px;
-  }
 `;
 
 const ROOT = 'Layout';
