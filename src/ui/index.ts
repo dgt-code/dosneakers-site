@@ -2,5 +2,14 @@ export enum COLORS {
   MAIN_BACKGROUND = '#F5F5F5',
   ACCENT_BACKGROUND = '#262626',
   BLUE = '#365E8C',
-  BLACK = '#000000'
+  BLACK = '#000000',
+  GRAY = '#EAEAEA',
+  GRAY_CD = '#CDCDCD'
+}
+
+export enum DEVICE_SIZE {
+  MOBILE = 320,
+  TABLET = 768,
+  LAPTOP = 1024,
+  DESKTOP = 1200
 }
