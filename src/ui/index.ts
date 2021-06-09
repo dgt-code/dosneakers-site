@@ -4,7 +4,8 @@ export enum COLORS {
   BLUE = '#365E8C',
   BLACK = '#000000',
   GRAY = '#EAEAEA',
-  GRAY_CD = '#CDCDCD'
+  GRAY_CD = '#CDCDCD',
+  WHITE = '#FFFFFF'
 }
 
 export enum DEVICE_SIZE {
