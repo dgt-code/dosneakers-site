@@ -17,6 +17,7 @@ export const ModalOverlay = styled.div`
   opacity: 1;
   z-index: 100;
   padding: 16px;
+  box-sizing: border-box;
   position: fixed;
   animation: show 0.5s ease;
   overflow-x: hidden;
@@ -37,11 +38,7 @@ export const ModalStyled = styled.div`
   background: ${COLORS.WHITE};
   color: ${COLORS.BLACK};
   position: relative;
-  padding: 10px;
-
-  @media(min-width: 480px) {
-    padding: 30px;
-  }
+  box-sizing: border-box;
 `;
 
 export const ModalIcon = styled.div`

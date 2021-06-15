@@ -21,6 +21,7 @@ interface Props {
   height?: string;
   openModal?: boolean;
   closeModal: () => void;
+  overlayClose?: boolean;
 }
 
 export const Modal: React.FC<Props> = ({
@@ -30,6 +31,7 @@ export const Modal: React.FC<Props> = ({
   height,
   openModal,
   closeModal,
+  overlayClose = false,
   children
 }) => {
   const ref = useRef() as MutableRefObject<HTMLDivElement>;
@@ -55,7 +57,7 @@ export const Modal: React.FC<Props> = ({
       {createPortal(
         <React.Fragment>
           { isOpen && (
-              <ModalOverlay onClick={(e) => handleClick(e)}>
+              <ModalOverlay onClick={(e) => overlayClose && handleClick(e)}>
                 <ModalStyled
                   width={width}
                   maxWidth={maxWidth}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal } from 'src/components';
+import { ModalSignup } from 'src/components';
 
 export const Home: React.FC = () => {
   const [ open, setOpen ] = useState(false);
@@ -7,14 +7,9 @@ export const Home: React.FC = () => {
   return(
     <>
       <button onClick={() => setOpen(true)}>Open Modal</button>
-      <Modal
+      <ModalSignup
         openModal={open}
-        closeModal={() => setOpen(false)}>
-        <div>
-          <h2>Modal</h2>
-          <h4>DoSneakers</h4>
-        </div>
-      </Modal>
+        closeModal={() => setOpen(false)} />
     </>
   );
 };
